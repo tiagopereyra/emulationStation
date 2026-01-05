@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<theme>
+
+  <!-- Theme base SAFE: sin fonts custom, sin includes externos -->
+  <formatVersion>7</formatVersion>
+
+  <!-- Colores base (RGBA en hex) -->
+  <variables>
+    <color name="bg" value="000000FF"/>        <!-- negro -->
+    <color name="accent" value="1E6BFFFF"/>    <!-- azul -->
+    <color name="text" value="FFFFFFFF"/>      <!-- blanco -->
+    <color name="muted" value="B0B0B0FF"/>     <!-- gris -->
+  </variables>
+
+  <!-- ===================== -->
+  <!-- SYSTEM VIEW (Sistemas) -->
+  <!-- ===================== -->
+  <view name="system">
+
+    <!-- Fondo -->
+    <image name="background">
+      <path>./assets/bg.png</path>
+      <tile>false</tile>
+    </image>
+
+    <!-- Logo marca/proyecto -->
+    <image name="brandLogo">
+      <path>./assets/logo.png</path>
+      <pos>0.06 0.06</pos>
+      <size>0.18 0.18</size>
+    </image>
+
+    <!-- Lista de sistemas -->
+    <textlist name="systemList">
+      <pos>0.08 0.30</pos>
+      <size>0.52 0.60</size>
+      <color>text</color>
+      <selectedColor>accent</selectedColor>
+      <primaryColor>text</primaryColor>
+      <secondaryColor>muted</secondaryColor>
+      <fontSize>0.040</fontSize>
+    </textlist>
+
+    <!-- Título grande del sistema -->
+    <text name="systemTitle">
+      <pos>0.62 0.30</pos>
+      <size>0.34 0.08</size>
+      <color>text</color>
+      <fontSize>0.055</fontSize>
+      <alignment>left</alignment>
+    </text>
+
+    <!-- Línea acento -->
+    <rectangle name="accentLine">
+      <pos>0.62 0.39</pos>
+      <size>0.30 0.006</size>
+      <color>accent</color>
+    </rectangle>
+
+    <!-- Arte/logo del sistema (por default usa logo.png) -->
+    <image name="systemArt">
+      <path>./assets/logo.png</path>
+      <pos>0.62 0.43</pos>
+      <size>0.30 0.30</size>
+    </image>
+
+  </view>
+
+  <!-- ======================= -->
+  <!-- GAMELIST VIEW (Items) -->
+  <!-- ======================= -->
+  <view name="gamelist">
+
+    <!-- Fondo -->
+    <image name="background">
+      <path>./assets/bg.png</path>
+      <tile>false</tile>
+    </image>
+
+    <!-- Logo marca/proyecto -->
+    <image name="brandLogoSmall">
+      <path>./assets/logo.png</path>
+      <pos>0.06 0.06</pos>
+      <size>0.12 0.12</size>
+    </image>
+
+    <!-- Lista de juegos/apps -->
+    <textlist name="gamelist">
+      <pos>0.08 0.22</pos>
+      <size>0.55 0.70</size>
+      <color>text</color>
+      <selectedColor>accent</selectedColor>
+      <primaryColor>text</primaryColor>
+      <secondaryColor>muted</secondaryColor>
+      <fontSize>0.038</fontSize>
+    </textlist>
+
+    <!-- Título del sistema -->
+    <text name="systemTitle">
+      <pos>0.66 0.22</pos>
+      <size>0.32 0.08</size>
+      <color>text</color>
+      <fontSize>0.050</fontSize>
+      <alignment>left</alignment>
+    </text>
+
+    <!-- Línea acento -->
+    <rectangle name="accentLine">
+      <pos>0.66 0.31</pos>
+      <size>0.28 0.006</size>
+      <color>accent</color>
+    </rectangle>
+
+    <!-- Arte/logo del sistema (override por app lo cambia) -->
+    <image name="systemArt">
+      <path>./assets/logo.png</path>
+      <pos>0.66 0.36</pos>
+      <size>0.28 0.28</size>
+    </image>
+
+  </view>
+
+</theme>

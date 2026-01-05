@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<theme>
+  <include>../theme.xml</include>
+
+  <view name="system,gamelist">
+    <image name="systemArt">
+      <path>../assets/youtube.png</path>
+    </image>
+  </view>
+</theme>
