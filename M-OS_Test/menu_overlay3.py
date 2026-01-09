@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-M-OS Overlay v11.4 — Sin Saltos (NO WRAP) + Scroll Centrado estable.
-- FIX definitivo: al llegar abajo y seguir bajando, NO vuelve arriba.
-- FIX definitivo: al llegar arriba y seguir subiendo, NO vuelve abajo.
-- Mantiene: scroll centrado, toggle fullscreen, estados dinámicos.
-"""
-
 import subprocess
 import sys
 import os
