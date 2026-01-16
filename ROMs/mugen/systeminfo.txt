@@ -1,0 +1,17 @@
+System name:
+mugen
+
+Full system name:
+M.U.G.E.N Game Engine
+
+Supported file extensions:
+.mugen
+
+Launch command:
+%STARTDIR%=%GAMEDIR% %EMULATOR_OS-SHELL% -c "%ROM%"
+
+Platform (for scraping):
+mugen
+
+Theme folder:
+mugen

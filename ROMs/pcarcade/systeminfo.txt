@@ -1,0 +1,23 @@
+System name:
+pcarcade
+
+Full system name:
+PC Arcade Systems
+
+Supported file extensions:
+.AppImage .desktop .exe .EXE .lindbergh .sh
+
+Launch command:
+%STARTDIR%=%GAMEDIR% %EMULATOR_WINE% %ROM%
+
+Alternative launch commands:
+%STARTDIR%=%GAMEDIR% %EMULATOR_PROTON% %ROM%
+%STARTDIR%=%GAMEENTRYDIR% %EMULATOR_LINDBERGH-LOADER% %INJECT%=%BASENAME%/%BASENAME%.commands
+%EMULATOR_OS-SHELL% -c "%ROM%"
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+
+Platform (for scraping):
+arcade
+
+Theme folder:
+pcarcade

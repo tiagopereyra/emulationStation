@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Chrome.sh</path>
+		<name>Chrome</name>
+		<playcount>4</playcount>
+		<lastplayed>20260116T125054</lastplayed>
+	</game>
+	<game>
+		<path>./Opera.sh</path>
+		<name>Opera</name>
+		<playcount>3</playcount>
+		<lastplayed>20260116T125100</lastplayed>
+	</game>
+	<game>
+		<path>./Discord.sh</path>
+		<name>Discord</name>
+		<playcount>2</playcount>
+		<playtime>17</playtime>
+		<lastplayed>20260116T125111</lastplayed>
+	</game>
+</gameList>

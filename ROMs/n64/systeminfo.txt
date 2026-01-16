@@ -1,0 +1,28 @@
+System name:
+n64
+
+Full system name:
+Nintendo 64
+
+Supported file extensions:
+.AppImage .bin .BIN .d64 .D64 .desktop .n64 .N64 .ndd .NDD .sh .u1 .U1 .v64 .V64 .z64 .Z64 .7z .7Z .zip .ZIP
+
+Launch command:
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/mupen64plus_next_libretro.so %ROM%
+
+Alternative launch commands:
+%EMULATOR_MUPEN64PLUS% --nogui %ROM%
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/parallel_n64_libretro.so %ROM%
+%EMULATOR_PARALLEL-LAUNCHER% %ROM%
+%EMULATOR_SIMPLE64% --nogui %ROM%
+%EMULATOR_ROSALIES-MUPEN-GUI% --nogui -q %ROM%
+%EMULATOR_ARES% --fullscreen --system "Nintendo 64" %ROM%
+%EMULATOR_GOPHER64% -f %ROM%
+%STARTDIR%=%GAMEDIR% %EMULATOR_OS-SHELL% -c "%ROM%"
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+
+Platform (for scraping):
+n64
+
+Theme folder:
+n64

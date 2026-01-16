@@ -1,0 +1,23 @@
+System name:
+ps4
+
+Full system name:
+Sony PlayStation 4
+
+Supported file extensions:
+.bin .BIN .desktop .ps4 .PS4
+
+Launch command:
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+
+Alternative launch commands:
+%EMULATOR_SHADPS4% -g %INJECT%=%BASENAME%.ps4
+%EMULATOR_SHADPS4% %ROM%
+%EMULATOR_SHADPS4-GUI% -d -g %INJECT%=%BASENAME%.ps4
+%EMULATOR_SHADPS4-GUI% -d -g %ROM%
+
+Platform (for scraping):
+ps4
+
+Theme folder:
+ps4

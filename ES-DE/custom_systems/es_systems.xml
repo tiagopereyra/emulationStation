@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<systemList>
+  <system>
+    <name>steam_games</name>
+    <fullname>🎮 Steam Juegos</fullname>
+    <path>~/ROMs/steam_games</path>
+    <extension>.desktop .sh</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>steam_games</theme>
+  </system>
+  <system>
+    <name>steam_launcher</name>
+    <fullname>🚀 Steam Launcher</fullname>
+    <path>~/ROMs/steam_launcher</path>
+    <extension>.desktop .sh</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>steam_launcher</theme>
+  </system>
+  <system>
+    <name>cloud</name>
+    <fullname>☁️ Cloud Gaming</fullname>
+    <path>~/ROMs/cloud</path>
+    <extension>.sh .desktop</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>cloud</theme>
+  </system>
+  <system>
+    <name>internet</name>
+    <fullname>🌐 Internet</fullname>
+    <path>~/ROMs/internet</path>
+    <extension>.sh .desktop</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>internet</theme>
+  </system>
+  <system>
+    <name>multimedia</name>
+    <fullname>🎞️ Multimedia</fullname>
+    <path>~/ROMs/multimedia</path>
+    <extension>.sh .desktop</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>multimedia</theme>
+  </system>
+  <system>
+    <name>system_apps</name>
+    <fullname>⚙️ Sistema</fullname>
+    <path>~/ROMs/system</path>
+    <extension>.sh .desktop</extension>
+    <command>bash %ROM%</command>
+    <platform>pc</platform>
+    <theme>sys_apps</theme>
+  </system>
+</systemList>

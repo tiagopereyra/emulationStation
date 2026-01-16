@@ -1,0 +1,20 @@
+System name:
+atarixe
+
+Full system name:
+Atari XE
+
+Supported file extensions:
+.a52 .A52 .atr .ATR .atx .ATX .bin .BIN .car .CAR .cas .CAS .cdm .CDM .com .COM .rom .ROM .xex .XEX .xfd .XFD .7z .7Z .zip .ZIP
+
+Launch command:
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/atari800_libretro.so %ROM%
+
+Alternative launch command:
+%EMULATOR_ATARI800% %ROM%
+
+Platform (for scraping):
+atarixe
+
+Theme folder:
+atarixe

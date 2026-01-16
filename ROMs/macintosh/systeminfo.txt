@@ -1,0 +1,24 @@
+System name:
+macintosh
+
+Full system name:
+Apple Macintosh
+
+Supported file extensions:
+.dsk .DSK .game .GAME
+
+Launch command:
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/macintosh macse -flop1 %ROM%
+
+Alternative launch commands:
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/macintosh macse -flop1 %GAMEDIR%/boot.dsk -flop2 %ROM%
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/macintosh macplus -flop1 %ROM%
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/macintosh macplus -flop1 %GAMEDIR%/boot.dsk -flop2 %ROM%
+%EMULATOR_BASILISKII% --nogui true
+%EMULATOR_SHEEPSHAVER% --nogui true
+
+Platform (for scraping):
+macintosh
+
+Theme folder:
+macintosh

@@ -1,0 +1,20 @@
+System name:
+ti99
+
+Full system name:
+Texas Instruments TI-99
+
+Supported file extensions:
+.rpk .RPK .7z .7Z .zip .ZIP
+
+Launch command:
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/ti99 ti99_4a -ioport peb -ioport:peb:slot3 speechadapter -cart %BASENAME%
+
+Alternative launch command:
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/ti99 ti99_4a -ioport peb -ioport:peb:slot3 speech -cart %BASENAME%
+
+Platform (for scraping):
+ti99
+
+Theme folder:
+ti99

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Archivos.sh</path>
+		<name>Archivos</name>
+		<playcount>1</playcount>
+		<lastplayed>20260115T200147</lastplayed>
+	</game>
+	<game>
+		<path>./WiFi.sh</path>
+		<name>WiFi</name>
+		<playcount>1</playcount>
+		<playtime>2</playtime>
+		<lastplayed>20260116T124341</lastplayed>
+	</game>
+	<game>
+		<path>./Bluetooth.sh</path>
+		<name>Bluetooth</name>
+		<playcount>1</playcount>
+		<playtime>2</playtime>
+		<lastplayed>20260116T124347</lastplayed>
+	</game>
+</gameList>

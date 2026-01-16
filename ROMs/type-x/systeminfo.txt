@@ -1,0 +1,22 @@
+System name:
+type-x
+
+Full system name:
+Taito Type X
+
+Supported file extensions:
+.AppImage .desktop .exe .EXE .sh
+
+Launch command:
+%STARTDIR%=%GAMEDIR% %EMULATOR_WINE% %ROM%
+
+Alternative launch commands:
+%STARTDIR%=%GAMEDIR% %EMULATOR_PROTON% %ROM%
+%EMULATOR_OS-SHELL% -c "%ROM%"
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+
+Platform (for scraping):
+arcade
+
+Theme folder:
+type-x

@@ -1,0 +1,21 @@
+System name:
+model3
+
+Full system name:
+Sega Model 3
+
+Supported file extensions:
+.7z .7Z .zip .ZIP
+
+Launch command:
+%STARTDIR%=%GAMEDIR% %EMULATOR_SUPERMODEL% -log-output=%GAMEDIR%/Config/Supermodel.log %INJECT%=%BASENAME%.commands %ROM%
+
+Alternative launch commands:
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/mame_libretro.so %ROM%
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/model3 %BASENAME%
+
+Platform (for scraping):
+arcade
+
+Theme folder:
+model3

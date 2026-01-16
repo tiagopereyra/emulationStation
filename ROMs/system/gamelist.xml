@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<gameList>
+    <game>
+        <path>./Archivos.sh</path>
+        <name>Explorador de Archivos</name>
+        <image>./media/files.webp</image>
+    </game>
+    <game>
+        <path>./WiFi.sh</path>
+        <name>Configurar Wi-Fi</name>
+        <image>./media/wifi.webp</image>
+    </game>
+</gameList>

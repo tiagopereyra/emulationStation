@@ -1,0 +1,32 @@
+System name:
+consolearcade
+
+Full system name:
+Console Arcade Systems
+
+Supported file extensions:
+.arcadedef .desktop .iso .ISO .ps3 .PS3 .sh .xbe .XBE .7z .7Z .zip .ZIP
+
+Launch command:
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/mame_libretro.so %ROM%
+
+Alternative launch commands:
+%STARTDIR%=~/.mame %EMULATOR_MAME% -rompath %GAMEDIR%\;%ROMPATH%/consolearcade %BASENAME%
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/flycast_libretro.so %ROM%
+%EMULATOR_FLYCAST% %ROM%
+%EMULATOR_FLYCAST-DOJO% %ROM%
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/kronos_libretro.so %ROM%
+%EMULATOR_MEDNAFEN% -force_module ss %ROM%
+%EMULATOR_PLAY!% --fullscreen --arcade %GAMEDIR%/%BASENAME%
+%EMULATOR_PLAY!% --fullscreen --disc %ROM%
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+%EMULATOR_RPCS3% --no-gui %RPCS3_GAMEID%:%INJECT%=%BASENAME%.ps3
+%INJECT%=%BASENAME%.esprefix %EMULATOR_TRIFORCE% -b -e %ROM%
+%INJECT%=%BASENAME%.esprefix %EMULATOR_XEMU% -dvd_path %ROM%
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+
+Platform (for scraping):
+arcade
+
+Theme folder:
+consolearcade

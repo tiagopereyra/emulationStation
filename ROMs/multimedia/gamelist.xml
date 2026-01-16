@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<gameList>
+    <game>
+        <path>/home/tiago/ROMs/multimedia/YouTube.sh</path>
+        <name>YouTube TV</name>
+        <image>/home/tiago/ROMs/multimedia/media/youtube.webp</image>
+    </game>
+    <game>
+        <path>/home/tiago/ROMs/multimedia/Spotify.sh</path>
+        <name>Spotify Música</name>
+        <image>/home/tiago/ROMs/multimedia/media/spotify.webp</image>
+    </game>
+    <game>
+        <path>/home/tiago/ROMs/multimedia/Stremio.sh</path>
+        <name>Stremio</name>
+        <image>/home/tiago/ROMs/multimedia/media/stremio.webp</image>
+    </game>
+    <game>
+        <path>/home/tiago/ROMs/multimedia/Kodi.sh</path>
+        <name>Kodi Center</name>
+        <image>/home/tiago/ROMs/multimedia/media/kodi.webp</image>
+    </game>
+    <game>
+        <path>/home/tiago/ROMs/multimedia/Fotos.sh</path>
+        <name>Galería de Fotos</name>
+        <image>/home/tiago/ROMs/multimedia/media/fotos.webp</image>
+    </game>
+</gameList>

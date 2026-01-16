@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gameList>
+    <game>
+        <path>./Chrome.sh</path>
+        <name>Google Chrome</name>
+        <image>./media/chrome.webp</image>
+    </game>
+    <game>
+        <path>./Opera.sh</path>
+        <name>Opera</name>
+        <image>./media/opera.webp</image>
+    </game>
+    <game>
+        <path>./Discord.sh</path>
+        <name>Discord</name>
+        <image>./media/discord.webp</image>
+    </game>
+</gameList>

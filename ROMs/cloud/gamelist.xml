@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gameList>
+    <game>
+        <path>./XboxCloud.sh</path>
+        <name>Xbox Cloud Gaming</name>
+        <image>./media/xbox_cloud.webp</image>
+    </game>
+</gameList>

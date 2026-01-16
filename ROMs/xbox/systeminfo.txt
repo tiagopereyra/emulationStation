@@ -1,0 +1,17 @@
+System name:
+xbox
+
+Full system name:
+Microsoft Xbox
+
+Supported file extensions:
+.iso .ISO
+
+Launch command:
+%INJECT%=%BASENAME%.esprefix %EMULATOR_XEMU% -dvd_path %ROM%
+
+Platform (for scraping):
+xbox
+
+Theme folder:
+xbox

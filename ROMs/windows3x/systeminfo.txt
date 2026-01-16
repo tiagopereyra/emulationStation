@@ -1,0 +1,25 @@
+System name:
+windows3x
+
+Full system name:
+Microsoft Windows 3.x
+
+Supported file extensions:
+.AppImage .bat .BAT .desktop .dosz .DOSZ .sh .7z .7Z .zip .ZIP
+
+Launch command:
+%STARTDIR%=%GAMEDIR% %EMULATOR_DOSBOX-X% -defaultdir %GAMEDIR% %ROM%
+
+Alternative launch commands:
+%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/dosbox_pure_libretro.so %ROM%
+%STARTDIR%=%GAMEDIR% %EMULATOR_DOSBOX-PURE-UNLEASHED% %ROM%
+%ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+%RUNINBACKGROUND% %ENABLESHORTCUTS% %EMULATOR_OS-SHELL% %ROM%
+%EMULATOR_OS-SHELL% -c "%ROM%"
+%RUNINBACKGROUND% %EMULATOR_OS-SHELL% -c "%ROM%"
+
+Platform (for scraping):
+windows3x
+
+Theme folder:
+windows3x
