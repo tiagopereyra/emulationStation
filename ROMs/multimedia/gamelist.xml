@@ -1,28 +1,73 @@
 <?xml version="1.0"?>
 <gameList>
-    <game>
-        <path>/home/tiago/ROMs/multimedia/YouTube.sh</path>
-        <name>YouTube TV</name>
-        <image>/home/tiago/ROMs/multimedia/media/youtube.webp</image>
-    </game>
-    <game>
-        <path>/home/tiago/ROMs/multimedia/Spotify.sh</path>
-        <name>Spotify Música</name>
-        <image>/home/tiago/ROMs/multimedia/media/spotify.webp</image>
-    </game>
-    <game>
-        <path>/home/tiago/ROMs/multimedia/Stremio.sh</path>
-        <name>Stremio</name>
-        <image>/home/tiago/ROMs/multimedia/media/stremio.webp</image>
-    </game>
-    <game>
-        <path>/home/tiago/ROMs/multimedia/Kodi.sh</path>
-        <name>Kodi Center</name>
-        <image>/home/tiago/ROMs/multimedia/media/kodi.webp</image>
-    </game>
-    <game>
-        <path>/home/tiago/ROMs/multimedia/Fotos.sh</path>
-        <name>Galería de Fotos</name>
-        <image>/home/tiago/ROMs/multimedia/media/fotos.webp</image>
-    </game>
+
+  <game>
+    <path>./Fotos.sh</path>
+    <name>Fotos</name>
+    <desc>Galería local para ver y organizar tus fotos y recuerdos.</desc>
+    <image>./media/fotos.webp</image>
+    <genre>Fotos</genre>
+    <developer>M-OS</developer>
+    <publisher>Multimedia</publisher>
+    <rating>0.90</rating>
+    <favorite>false</favorite>
+    <players>1</players>
+    <tags>offline,local,fotos</tags>
+  </game>
+
+  <game>
+    <path>./Kodi.sh</path>
+    <name>Kodi</name>
+    <desc>Centro multimedia para películas, series y contenido local (y plugins).</desc>
+    <image>./media/kodi.webp</image>
+    <genre>Media Center</genre>
+    <developer>Kodi Foundation</developer>
+    <publisher>Multimedia</publisher>
+    <rating>0.95</rating>
+    <favorite>false</favorite>
+    <players>1</players>
+    <tags>local,streaming,mediacenter</tags>
+  </game>
+
+  <game>
+    <path>./Spotify.sh</path>
+    <name>Spotify</name>
+    <desc>Música y podcasts. Reproducción online y control de tus playlists.</desc>
+    <image>./media/spotify.webp</image>
+    <genre>Música</genre>
+    <developer>Spotify</developer>
+    <publisher>Multimedia</publisher>
+    <rating>0.95</rating>
+    <favorite>false</favorite>
+    <players>1</players>
+    <tags>online,music,podcast</tags>
+  </game>
+
+  <game>
+    <path>./Stremio.sh</path>
+    <name>Stremio</name>
+    <desc>Plataforma para ver películas y series desde múltiples fuentes y catálogos.</desc>
+    <image>./media/stremio.webp</image>
+    <genre>Streaming</genre>
+    <developer>Stremio</developer>
+    <publisher>Multimedia</publisher>
+    <rating>0.90</rating>
+    <favorite>false</favorite>
+    <players>1</players>
+    <tags>online,streaming,series,peliculas</tags>
+  </game>
+
+  <game>
+    <path>./YouTube.sh</path>
+    <name>YouTube</name>
+    <desc>Videos, canales y contenido online. Ideal para música, tutoriales y stream.</desc>
+    <image>./media/youtube.webp</image>
+    <genre>Streaming</genre>
+    <developer>Google</developer>
+    <publisher>Multimedia</publisher>
+    <rating>0.90</rating>
+    <favorite>false</favorite>
+    <players>1</players>
+    <tags>online,video,streaming</tags>
+
 </gameList>
