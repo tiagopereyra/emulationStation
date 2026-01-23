@@ -1,0 +1,673 @@
+<!--
+theme name: 	Elementerial
+designed by:   	Rob Zombie
+license:      	creative commons CC-BY-NC-SA
+-->
+
+X
+<theme>
+	<include>./_inc/systems/metadata-global/_default.xml</include>
+	<include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+	<include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+	<include>./theme-customizations/metadata-custom/${system.theme}.xml</include>
+	<include>./colors.xml</include>
+	<variables>
+		<spacerImage>./_inc/images/space.png</spacerImage>
+		<fontRegular>./_inc/fonts/Inter-Regular.otf</fontRegular>
+		<fontBold>./_inc/fonts/Inter-Bold.otf</fontBold>
+		<fontLight>./_inc/fonts/Inter-Light.otf</fontLight>
+		<fontHelper>./_inc/fonts/RobotoCondensed-Regular.ttf</fontHelper>
+	</variables>
+	<variant name="gamelist-textlist-basic,gamelist-textlist-video,gamelist-textlist-detailed,gamelist-elementflix, gamelist-grid-small,gamelist-grid-large">
+		<variables>
+			<artworkFolder>artwork (modern)</artworkFolder>
+		</variables>
+	</variant>
+	<variant name="gamelist-textlist-basic-classic,gamelist-textlist-video-classic,gamelist-textlist-detailed-classic,gamelist-elementflix-classic, gamelist-grid-small-classic,gamelist-grid-large-classic">
+		<variables>
+			<artworkFolder>artwork (classic)</artworkFolder>
+		</variables>
+	</variant>
+	<!--
+	///
+	All Views
+	///
+	-->
+	<view name="system,gamelist">
+		<helpsystem name="help">
+			<origin>0 0.5</origin>
+			<pos>0.016666667 0.96</pos>
+			<fontSize>${fontSizeBody}</fontSize>
+			<fontSizeDimmed>${fontSizeBody}</fontSizeDimmed>
+			<fontPath>${fontHelper}</fontPath>
+			<iconColor>${sectColor}</iconColor>
+			<textColor>${fgColor}</textColor>
+			<originDimmed>0.5 0.5</originDimmed>
+			<posDimmed>0.5 0.96</posDimmed>
+			<textColorDimmed>${fgColor}</textColorDimmed>
+			<iconColorDimmed>${sectColor}</iconColorDimmed>
+		</helpsystem>
+		<image name="background">
+			<path>./_inc/images/background.png</path>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<tile>true</tile>
+			<color>${bgColor}</color>
+			<opacity>${bgOpacity}</opacity>
+			<zIndex>2</zIndex>
+		</image>
+		<systemstatus name="system-status">
+			<fontPath>${fontRegular}</fontPath>
+			<height>${fontSizeCaption}</height>
+			<color>${fgColor}</color>
+		</systemstatus>
+		<clock name="clock">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${fontSizeCaption}</fontSize>
+			<color>${fgColor}</color>
+		</clock>
+	</view>
+	<!--
+	///
+	System View
+	///
+	-->
+	<view name="system">
+		<image name="custom_bg_fg">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/carousel-background.png</path>
+			<color>${bgColor}</color>
+			<zIndex>3</zIndex>
+		</image>
+		<carousel name="systemcarousel">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 0.35</size>
+			<itemScale>1.8 </itemScale>
+			<staticImage>./_inc/systems/logos/${system.theme}.webp</staticImage>
+			<type>horizontal</type>
+			<color>${bgColor}00</color>
+			<selectedItemMargins>0 0</selectedItemMargins>
+			<horizontalOffset>-0.3</horizontalOffset>
+			<fastScrolling>true</fastScrolling>
+			<unfocusedItemDimming>0.6</unfocusedItemDimming>
+			<zIndex>4</zIndex>
+		</carousel>
+		<text name="systemName, autoCollectionName, customCollectionName">
+			<origin>0 1</origin>
+			<pos>0.083333 0.41</pos>
+			<size>0.8333333 0</size>
+			<lineSpacing>1.1</lineSpacing>
+			<fontSize>${fontSizeH1}</fontSize>
+			<fontPath>${fontBold}</fontPath>
+			<color>${fgColor}</color>
+			<visible>true</visible>
+		</text>
+		<text name="systemName">
+			<text>${system.fullName.noCollections}</text>
+			<letterCase>none</letterCase>
+		</text>
+		<text name="autoCollectionName">
+			<text>${system.fullName.autoCollections}</text>
+			<letterCase>capitalize</letterCase>
+		</text>
+		<text name="customCollectionName">
+			<text>${system.fullName.customCollections}</text>
+			<letterCase>none</letterCase>
+		</text>
+		<text name="systemInfo">
+			<origin>0 0</origin>
+			<pos>0.083333 0.41</pos>
+			<lineSpacing>1.1</lineSpacing>
+			<fontSize>${fontSizeBody}</fontSize>
+			<fontPath>${fontRegular}</fontPath>
+			<systemdata>gamecount</systemdata>
+			<letterCase>capitalize</letterCase>
+			<color>${fgColor}</color>
+			<visible>!system.name == "multimedia" && !system.name == "internet" && !system.name == "cloud" && !system.name == "system_apps"</visible>
+		</text>
+	</view>
+	<variant name="gamelist-textlist-basic,gamelist-textlist-video,gamelist-textlist-detailed,gamelist-elementflix, gamelist-grid-small,gamelist-grid-large, gamelist-textlist-basic-classic,gamelist-textlist-video-classic,gamelist-textlist-detailed-classic,gamelist-elementflix-classic, gamelist-grid-small-classic,gamelist-grid-large-classic">
+		<view name="system">
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+				<default>./_inc/systems/${artworkFolder}/_default.webp</default>
+				<path>./_inc/systems/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="cover_list_custom">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+				<path>./theme-customizations/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-basic-classic,gamelist-textlist-video-classic,gamelist-textlist-detailed-classic,gamelist-elementflix-classic, gamelist-grid-small-classic,gamelist-grid-large-classic">
+		<view name="system">
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${classicCropPos}</cropPos>
+				<default>./_inc/systems/${artworkFolder}/_default.webp</default>
+				<path>./_inc/systems/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="cover_list_custom">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${classicCropPos}</cropPos>
+				<path>./theme-customizations/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-basic-video,gamelist-textlist-video-video,gamelist-textlist-detailed-video,gamelist-elementflix-video, gamelist-grid-small-video,gamelist-grid-large-video">
+		<view name="system">
+			<video name="carouselVideo">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.7</cropSize>
+				<imageType>fanart,screenshot</imageType>
+				<delay>2</delay>
+				<zIndex>1</zIndex>
+			</video>
+			<gameselector name="system-game-selector">
+			</gameselector>
+		</view>
+	</variant>
+	<!--
+	///
+	Gamelist View: List - Basic
+	///
+	-->
+	<variant name="gamelist-textlist-basic,gamelist-textlist-basic-classic,gamelist-textlist-basic-video">
+		<view name="gamelist">
+			<image name="custom_bg_fg">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>./_inc/images/carousel-background.png</path>
+				<color>${bgColor}</color>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<zIndex>1</zIndex>
+			</image>
+			<text name="logoText">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.1</pos>
+				<fontSize>${fontSizeH2}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<metadata>systemFullname</metadata>
+				<letterCase>none</letterCase>
+				<color>${fgColor}</color>
+			</text>
+			<textlist name="gamelist">
+				<origin>0 0</origin>
+				<pos>0 0.2</pos>
+				<size>1 0.725</size>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${fontSizeBody}</fontSize>
+				<horizontalMargin>0.033333</horizontalMargin>
+				<lineSpacing>1.6</lineSpacing>
+				<primaryColor>${fgColor}</primaryColor>
+				<secondaryColor>${fgColor}</secondaryColor>
+				<selectedColor>${onMainColor}</selectedColor>
+				<selectedSecondaryColor>${onMainColor}</selectedSecondaryColor>
+				<selectedBackgroundCornerRadius>0</selectedBackgroundCornerRadius>
+				<selectorColor>${mainColor}</selectorColor>
+				<textHorizontalScrolling>true</textHorizontalScrolling>
+			</textlist>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-basic, gamelist-textlist-basic-classic">
+		<view name="gamelist">
+			<image name="cover_list">
+				<default>./_inc/systems/${artworkFolder}/_default.webp</default>
+				<path>./_inc/systems/${artworkFolder}/${system.theme}.webp</path>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+			</image>
+			<image name="cover_list_custom">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+				<path>./theme-customizations/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-basic-video">
+		<view name="gamelist">
+			<image name="cover_list">
+				<imageType>fanart,screenshot</imageType>
+				<cropSize>1 0.7</cropSize>
+			</image>
+		</view>
+	</variant>
+	<!--
+	///
+	Gamelist View: List - Video
+	///
+	-->
+	<variant name="gamelist-textlist-video,gamelist-textlist-video-classic,gamelist-textlist-video-video">
+		<view name="gamelist">
+			<video name="md_video">
+				<origin>1 0</origin>
+				<pos>1 0</pos>
+				<cropSize>0.6 0.6</cropSize>
+				<cropPos>0.5 0.75</cropPos>
+				<imageType>screenshot</imageType>
+				<delay>2</delay>
+				<zIndex>1</zIndex>
+			</video>
+			<image name="custom_bg_fg">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>./_inc/images/gamelist-video.png</path>
+				<color>${bgColor}</color>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="md_marquee">
+				<origin>0.5 0.5</origin>
+				<pos>0.2 0.1875</pos>
+				<maxSize>0.3333333 0.325</maxSize>
+				<imageType>marquee</imageType>
+				<zIndex>3</zIndex>
+			</image>
+			<text name="logoText">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.4</pos>
+				<fontSize>${fontSizeH2}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<metadata>systemFullname</metadata>
+				<letterCase>none</letterCase>
+				<color>${fgColor}</color>
+			</text>
+			<textlist name="gamelist">
+				<origin>0 0</origin>
+				<pos>0 0.45</pos>
+				<size>1 0.475</size>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${fontSizeBody}</fontSize>
+				<horizontalMargin>0.033333</horizontalMargin>
+				<lineSpacing>1.6</lineSpacing>
+				<primaryColor>${fgColor}</primaryColor>
+				<secondaryColor>${fgColor}</secondaryColor>
+				<selectedColor>${onMainColor}</selectedColor>
+				<selectedSecondaryColor>${onMainColor}</selectedSecondaryColor>
+				<selectedBackgroundCornerRadius>0</selectedBackgroundCornerRadius>
+				<selectorColor>${mainColor}</selectorColor>
+				<textHorizontalScrolling>true</textHorizontalScrolling>
+			</textlist>
+		</view>
+	</variant>
+	<!--
+	///
+	Gamelist View: List - Detailed
+	///
+	-->
+	<variant name="gamelist-textlist-detailed,gamelist-textlist-detailed-classic,gamelist-textlist-detailed-video">
+		<view name="gamelist">
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<imageType>system</imageType>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="md_image">
+				<origin>0.5 0.5</origin>
+				<pos>0.733333 0.525</pos>
+				<cropSize>0.466667 0.55</cropSize>
+				<cornerRadius>0.01</cornerRadius>
+				<imageType>image</imageType>
+				<zIndex>3</zIndex>
+			</image>
+			<image name="md_marquee">
+				<origin>0.5 0.5</origin>
+				<pos>0.733333 0.25</pos>
+				<maxSize>0.25 0.175</maxSize>
+				<imageType>image</imageType>
+				<zIndex>4</zIndex>
+			</image>
+			<text name="logoText">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.1</pos>
+				<fontSize>${fontSizeH2}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<metadata>systemFullname</metadata>
+				<letterCase>none</letterCase>
+				<color>${fgColor}</color>
+			</text>
+			<textlist name="gamelist">
+				<origin>0 0</origin>
+				<pos>0 0.2</pos>
+				<size>0.466667 0.725</size>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${fontSizeBody}</fontSize>
+				<horizontalMargin>0.033333</horizontalMargin>
+				<lineSpacing>1.6</lineSpacing>
+				<primaryColor>${fgColor}</primaryColor>
+				<secondaryColor>${fgColor}</secondaryColor>
+				<selectedColor>${onMainColor}</selectedColor>
+				<selectedSecondaryColor>${onMainColor}</selectedSecondaryColor>
+				<selectedBackgroundColor>${mainColor}</selectedBackgroundColor>
+				<selectedSecondaryBackgroundColor>${mainColor}</selectedSecondaryBackgroundColor>
+				<selectedBackgroundCornerRadius>0</selectedBackgroundCornerRadius>
+				<selectorColor>${mainColor}</selectorColor>
+				<textHorizontalScrolling>true</textHorizontalScrolling>
+			</textlist>
+			<rating name ="md_rating">
+				<origin>0.5 0</origin>
+				<pos>0.733333 0.83125</pos>
+				<size>0 0.075</size>
+				<filledPath>./_inc/images/star.svg</filledPath>
+				<unfilledPath>./_inc/images/star_border.svg</unfilledPath>
+				<color>${sectColor}</color>
+				<zIndex>4</zIndex>
+			</rating>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-detailed, gamelist-textlist-detailed-classic">
+		<view name="gamelist">
+			<image name="cover_list">
+				<default>./_inc/systems/${artworkFolder}/_default.webp</default>
+				<path>./_inc/systems/${artworkFolder}/${system.theme}.webp</path>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+			</image>
+			<image name="cover_list_custom">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+				<path>./theme-customizations/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-textlist-detailed-video">
+		<view name="gamelist">
+			<image name="cover_list">
+				<imageType>fanart,screenshot</imageType>
+				<cropSize>1 0.7</cropSize>
+			</image>
+		</view>
+	</variant>
+	<!--
+	///
+	Gamelist View: Elementflix
+	///
+	-->
+	<variant name="gamelist-elementflix,gamelist-elementflix-no-marquee,gamelist-elementflix-classic,gamelist-elementflix-classic-no-marquee,gamelist-elementflix-video,gamelist-elementflix-video-no-marquee">
+		<include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
+		<view name="gamelist">
+			<video name="md_video">
+				<origin>1 0</origin>
+				<pos>1 0</pos>
+				<cropSize>0.6 0.6</cropSize>
+				<cropPos>0.5 0.75</cropPos>
+				<imageType>screenshot</imageType>
+				<delay>2</delay>
+				<zIndex>1</zIndex>
+			</video>
+			<image name="custom_bg_fg">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>./_inc/images/gamelist-video.png</path>
+				<color>${bgColor}</color>
+				<zIndex>2</zIndex>
+			</image>
+			<text name="md_description">
+				<origin>0 0</origin>
+				<pos>0.033333333 0.25</pos>
+				<size>0.43333333 0.15</size>
+				<color>${fgColor}</color>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${fontSizeCaption}</fontSize>
+				<metadata>description</metadata>
+				<lineSpacing>1.1</lineSpacing>
+			</text>
+			<text name="logoText">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.45</pos>
+				<fontSize>${fontSizeH3}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<metadata>systemFullname</metadata>
+				<metadataElement>true</metadataElement>
+				<letterCase>none</letterCase>
+				<color>${fgColor}</color>
+			</text>
+			<carousel name="game-carousel">
+				<origin>0 0</origin>
+				<pos>0 0.475</pos>
+				<size>1 0.475</size>
+				<itemScale>1.075</itemScale>
+				<imageType>cover</imageType>
+				<type>horizontal</type>
+				<color>${bgColor}00</color>
+				<selectedItemMargins>0 0</selectedItemMargins>
+				<fastScrolling>true</fastScrolling>
+				<unfocusedItemDimming>0.8</unfocusedItemDimming>
+				<fontSize>${fontSizeBody}</fontSize>
+				<textColor>${fgColor}</textColor>
+				<textRelativeScale>0.8</textRelativeScale>
+				<textBackgroundColor>${fgColor}0D</textBackgroundColor>
+			</carousel>
+		</view>
+	</variant>
+	<variant name="gamelist-elementflix,gamelist-elementflix-classic,gamelist-elementflix-video">
+		<view name="gamelist">
+			<image name="md_marquee">
+				<origin>0.5 0.5</origin>
+				<pos>0.233333333 0.125</pos>
+				<maxSize>0.4 0.225</maxSize>
+				<imageType>marquee</imageType>
+				<zIndex>3</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-elementflix-no-marquee,gamelist-elementflix-classic-no-marquee,gamelist-elementflix-video-no-marquee">
+		<view name="gamelist">
+			<text name="md_marquee">
+				<origin>0.5 0.5</origin>
+				<pos>0.233333333 0.125</pos>
+				<size>0.4 0.225</size>
+				<metadata>name</metadata>
+				<fontSize>${fontSizeH2}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<lineSpacing>1.1</lineSpacing>
+				<color>${fgColor}</color>
+				<zIndex>3</zIndex>
+			</text>
+		</view>
+	</variant>
+	<!--
+	///
+	Gamelist View: Grid
+	///
+	-->
+	<variant name="gamelist-grid-small,gamelist-grid-large,gamelist-grid-small-classic,gamelist-grid-large-classic,gamelist-grid-small-video,gamelist-grid-large-video">
+		<view name="gamelist">
+			<image name="custom_bg_fg">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>./_inc/images/carousel-background.png</path>
+				<color>${bgColor}</color>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover_list">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.7</cropSize>
+				<zIndex>1</zIndex>
+			</image>
+			<text name="logoText">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.078125</pos>
+				<fontSize>${fontSizeH2}</fontSize>
+				<fontPath>${fontBold}</fontPath>
+				<metadata>systemFullname</metadata>
+				<letterCase>none</letterCase>
+				<color>${fgColor}</color>
+			</text>
+			<text name="md_name">
+				<origin>0 0.5</origin>
+				<pos>0.033333 0.14375</pos>
+				<size>0.9 ${fontSizeBody}</size>
+				<fontSize>${fontSizeBody}</fontSize>
+				<fontPath>${fontRegular}</fontPath>
+				<metadata>name</metadata>
+				<color>${fgColor}</color>
+				<zIndex>5</zIndex>
+			</text>
+			<grid name="game-grid">
+				<origin>0.5 0</origin>
+				<pos>0.5 0.2</pos>
+				<size>0.933333 0.725</size>
+				<itemScale>1.1</itemScale>
+				<imageCornerRadius>0.01</imageCornerRadius>
+				<scaleInwards>true</scaleInwards>
+				<unfocusedItemDimming>0.7</unfocusedItemDimming>
+				<fontSize>${fontSizeCaption}</fontSize>
+				<textColor>${fgColor}</textColor>
+				<textRelativeScale>1</textRelativeScale>
+				<textBackgroundColor>${fgColor}0D</textBackgroundColor>
+			</grid>
+		</view>
+	</variant>
+	<variant name="gamelist-grid-small,gamelist-grid-large,gamelist-grid-small-classic,gamelist-grid-large-classic,gamelist-grid-small-video,gamelist-grid-large-video">
+		<include>./_inc/systems/coversizeGrid/${systemCoverSize}.xml</include>
+		<view name="gamelist">
+			<grid name="game-grid">
+				<imageType>cover</imageType>
+			</grid>
+		</view>
+	</variant>
+	<variant name="gamelist-grid-small,gamelist-grid-large, gamelist-grid-small-classic,gamelist-grid-large-classic">
+		<view name="gamelist">
+			<image name="cover_list">
+				<default>./_inc/systems/${artworkFolder}/_default.webp</default>
+				<path>./_inc/systems/${artworkFolder}/${system.theme}.webp</path>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+			</image>
+			<image name="cover_list_custom">
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<cropSize>1 0.5</cropSize>
+				<cropPos>0.5 ${modernCropPos}</cropPos>
+				<path>./theme-customizations/${artworkFolder}/${system.theme}.webp</path>
+				<zIndex>1</zIndex>
+			</image>
+		</view>
+	</variant>
+	<variant name="gamelist-grid-small-video,gamelist-grid-large-video">
+		<view name="gamelist">
+			<image name="cover_list">
+				<imageType>fanart,screenshot</imageType>
+				<cropSize>1 0.7</cropSize>
+			</image>
+		</view>
+	</variant>
+	<!--
+	///
+	Font Size
+	///
+	-->
+	<fontSize name="medium">
+		<variables>
+			<fontSizeH1>0.0625</fontSizeH1>
+			<fontSizeH2>0.05</fontSizeH2>
+			<fontSizeH3>0.04375</fontSizeH3>
+			<fontSizeBody>0.0375</fontSizeBody>
+			<fontSizeCaption>0.028125</fontSizeCaption>
+		</variables>
+	</fontSize>
+	<fontSize name="large">
+		<variables>
+			<fontSizeH1>0.06875</fontSizeH1>
+			<fontSizeH2>0.05625</fontSizeH2>
+			<fontSizeH3>0.046875</fontSizeH3>
+			<fontSizeBody>0.040625</fontSizeBody>
+			<fontSizeCaption>0.03125</fontSizeCaption>
+		</variables>
+	</fontSize>
+	<fontSize name="small">
+		<variables>
+			<fontSizeH1>0.05625</fontSizeH1>
+			<fontSizeH2>0.04375</fontSizeH2>
+			<fontSizeH3>0.0375</fontSizeH3>
+			<fontSizeBody>0.03125</fontSizeBody>
+			<fontSizeCaption>0.028125</fontSizeCaption>
+		</variables>
+	</fontSize>
+	<!--
+	///
+	Aspect Ratios
+	///
+	-->
+	<aspectRatio name="1:1">
+		<include>./aspect-ratio-1-1.xml</include>
+	</aspectRatio>
+	<aspectRatio name="5:4">
+		<include>./aspect-ratio-5-4.xml</include>
+	</aspectRatio>
+	<aspectRatio name="4:3">
+		<include>./aspect-ratio-4-3.xml</include>
+	</aspectRatio>
+	<aspectRatio name="3:2">
+		<include>./aspect-ratio-3-2.xml</include>
+	</aspectRatio>
+	<aspectRatio name="16:10">
+		<include>./aspect-ratio-16-10.xml</include>
+	</aspectRatio>
+	<aspectRatio name="16:9">
+		<include>./aspect-ratio-16-9.xml</include>
+	</aspectRatio>
+	<aspectRatio name="19.5:9">
+		<include>./aspect-ratio-19_5-9.xml</include>
+	</aspectRatio>
+	<aspectRatio name="21:9">
+		<include>./aspect-ratio-21-9.xml</include>
+	</aspectRatio>
+	<view name="system, gamelist">
+		<image name="background">
+			<zIndex>0</zIndex>
+		</image>
+		<image name="custom_bg_fg">
+			<zIndex>0</zIndex>
+		</image>
+		<image name="logo_corner">
+			<path>./logo_esquina.png</path>
+			<pos>0.97 0.06</pos>
+			<origin>1 0.5</origin>
+			<maxSize>0.15 0.08</maxSize>
+			<color>FFFFFF</color>
+			<zIndex>100</zIndex>
+		</image>
+	</view>
+</theme>

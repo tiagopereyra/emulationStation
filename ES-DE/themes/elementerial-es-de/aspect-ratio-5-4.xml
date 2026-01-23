@@ -1,0 +1,20 @@
+<!-- 
+5:4 aspect ratio
+-->
+<theme>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<itemSize>0.3000 0.25</itemSize>
+			<maxItemCount>3</maxItemCount>
+			<horizontalOffset>-0.225</horizontalOffset>
+		</carousel>
+	</view>
+	
+	<variant name="gamelist-textlist-basic-video">
+		<view name="gamelist">
+			<image name="cover_list">
+				<pos>0 -0.1</pos>
+			</image>
+		</view>
+	</variant>
+</theme>

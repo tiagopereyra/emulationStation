@@ -1,0 +1,8 @@
+<theme>
+    <include>./../../systems/metadata-global/steam.xml</include>
+    <view name="system, basic, detailed, grid, video, carousel">
+        <image name="logo">
+            <path>./../../system-logo/internet.webp</path>
+        </image>
+    </view>
+</theme>

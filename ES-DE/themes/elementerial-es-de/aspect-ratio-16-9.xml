@@ -1,0 +1,11 @@
+<!-- 
+16:9 aspect ratio
+-->
+<theme>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<itemSize>0.28 0.33</itemSize>
+			<maxItemCount>3.2</maxItemCount>
+		</carousel>
+	</view>
+</theme>

@@ -1,0 +1,12 @@
+<theme>
+  <system name="multimedia">
+
+    <!-- Forzar que la vista detailed use <image> -->
+    <view name="gamelist">
+      <image name="md_image">
+        <imageType>image</imageType>
+      </image>
+    </view>
+
+  </system>
+</theme>

@@ -1,0 +1,288 @@
+<!--
+    Theme capabilities for Canvas-es-de
+-->
+
+<themeCapabilities>
+   
+   <themeName>Canvas</themeName>
+
+   <aspectRatio>16:9</aspectRatio>
+   <aspectRatio>16:10</aspectRatio>
+   <aspectRatio>4:3</aspectRatio>
+   <aspectRatio>19.5:9</aspectRatio>
+   <aspectRatio>1:1</aspectRatio>
+   <aspectRatio>8:7</aspectRatio>
+   <aspectRatio>21:9</aspectRatio>
+   <aspectRatio>3:2</aspectRatio>
+
+   <fontSize>small</fontSize>
+   <fontSize>medium</fontSize>
+   <fontSize>large</fontSize>
+   <fontSize>x-large</fontSize>
+
+
+   <colorScheme name="dark-capsule">
+      <label>[Capsule] Dark</label>
+   </colorScheme>
+   <colorScheme name="light-capsule">
+      <label>[Capsule] Light</label>
+   </colorScheme>
+   <colorScheme name="retro-capsule">
+      <label>[Capsule] Retro</label>
+   </colorScheme>
+   <colorScheme name="pocket-light-capsule">
+      <label>[Capsule] Pocket Light</label>
+   </colorScheme>
+   <colorScheme name="pocket-medium-capsule">
+      <label>[Capsule] Pocket Medium</label>
+   </colorScheme>
+   <colorScheme name="pocket-dark-capsule">
+      <label>[Capsule] Pocket Dark</label>
+   </colorScheme>
+   <colorScheme name="neon-capsule">
+      <label>[Capsule] Neon</label>
+   </colorScheme>
+   <colorScheme name="pastel-capsule">
+      <label>[Capsule] Pastel</label>
+   </colorScheme>
+   <colorScheme name="sony-capsule">
+      <label>[Capsule] Sony</label>
+   </colorScheme>
+   <colorScheme name="nes-capsule">
+      <label>[Capsule] NES</label>
+   </colorScheme>
+   <colorScheme name="snes-capsule">
+      <label>[Capsule] SNES</label>
+   </colorScheme>
+   <colorScheme name="famicom-capsule">
+      <label>[Capsule] Famicom</label>
+   </colorScheme>
+   <colorScheme name="dark-controller">
+      <label>[Controller] Dark</label>
+   </colorScheme>
+      <colorScheme name="light-controller">
+      <label>[Controller] Light</label>
+   </colorScheme>
+   <colorScheme name="retro-controller">
+      <label>[Controller] Retro</label>
+   </colorScheme>
+   <colorScheme name="pocket-light-controller">
+      <label>[Controller] Pocket Light</label>
+   </colorScheme>
+   <colorScheme name="pocket-medium-controller">
+      <label>[Controller] Pocket Medium</label>
+   </colorScheme>
+   <colorScheme name="pocket-dark-controller">
+      <label>[Controller] Pocket Dark</label>
+   </colorScheme>
+   <colorScheme name="neon-controller">
+      <label>[Controller] Neon</label>
+   </colorScheme>
+   <colorScheme name="pastel-controller">
+      <label>[Controller] Pastel</label>
+   </colorScheme>
+   <colorScheme name="sony-controller">
+      <label>[Controller] Sony</label>
+   </colorScheme>
+   <colorScheme name="nes-controller">
+      <label>[Controller] NES</label>
+   </colorScheme>
+   <colorScheme name="snes-controller">
+      <label>[Controller] SNES</label>
+   </colorScheme>
+   <colorScheme name="famicom-controller">
+      <label>[Controller] Famicom</label>
+   </colorScheme>
+   <colorScheme name="dark-logo">
+      <label>[Logo] Dark</label>
+   </colorScheme>
+      <colorScheme name="light-logo">
+      <label>[Logo] Light</label>
+   </colorScheme>
+   <colorScheme name="retro-logo">
+      <label>[Logo] Retro</label>
+   </colorScheme>
+   <colorScheme name="pocket-light-logo">
+      <label>[Logo] Pocket Light</label>
+   </colorScheme>
+   <colorScheme name="pocket-medium-logo">
+      <label>[Logo] Pocket Medium</label>
+   </colorScheme>
+   <colorScheme name="pocket-dark-logo">
+      <label>[Logo] Pocket Dark</label>
+   </colorScheme>
+   <colorScheme name="neon-logo">
+      <label>[Logo] Neon</label>
+   </colorScheme>
+   <colorScheme name="pastel-logo">
+      <label>[Logo] Pastel</label>
+   </colorScheme>
+   <colorScheme name="sony-logo">
+      <label>[Logo] Sony</label>
+   </colorScheme>
+      <colorScheme name="nes-logo">
+      <label>[Logo] NES</label>
+   </colorScheme>
+   <colorScheme name="snes-logo">
+      <label>[Logo] SNES</label>
+   </colorScheme>
+   <colorScheme name="famicom-logo">
+      <label>[Logo] Famicom</label>
+   </colorScheme>
+   <colorScheme name="dark-screenshot">
+      <label>[Screenshot] Dark</label>
+   </colorScheme>
+   <colorScheme name="light-screenshot">
+      <label>[Screenshot] Light</label>
+   </colorScheme>
+   <colorScheme name="retro-screenshot">
+      <label>[Screenshot] Retro</label>
+   </colorScheme>
+   <colorScheme name="pocket-light-screenshot">
+      <label>[Screenshot] Pocket Light</label>
+   </colorScheme>
+   <colorScheme name="pocket-medium-screenshot">
+      <label>[Screenshot] Pocket Medium</label>
+   </colorScheme>
+   <colorScheme name="pocket-dark-screenshot">
+      <label>[Screenshot] Pocket Dark</label>
+   </colorScheme>
+   <colorScheme name="neon-screenshot">
+      <label>[Screenshot] Neon</label>
+   </colorScheme>
+   <colorScheme name="pastel-screenshot">
+      <label>[Screenshot] Pastel</label>
+   </colorScheme>
+   <colorScheme name="sony-screenshot">
+      <label>[Screenshot] Sony</label>
+   </colorScheme>
+   <colorScheme name="nes-screenshot">
+      <label>[Screenshot] NES</label>
+   </colorScheme>
+   <colorScheme name="snes-screenshot">
+      <label>[Screenshot] SNES</label>
+   </colorScheme>
+   <colorScheme name="famicom-screenshot">
+      <label>[Screenshot] Famicom</label>
+   </colorScheme>
+   <colorScheme name="dark">
+      <label>[Art] Dark</label>
+   </colorScheme>
+   <colorScheme name="light">
+      <label>[Art] Light</label>
+   </colorScheme>
+   <colorScheme name="retro">
+      <label>[Art] Retro</label>
+   </colorScheme>
+   <colorScheme name="pocket-light">
+      <label>[Art] Pocket Light</label>
+   </colorScheme>
+   <colorScheme name="pocket-medium">
+      <label>[Art] Pocket Medium</label>
+   </colorScheme>
+   <colorScheme name="pocket-dark">
+      <label>[Art] Pocket Dark</label>
+   </colorScheme>
+   <colorScheme name="neon">
+      <label>[Art] Neon</label>
+   </colorScheme>
+   <colorScheme name="pastel">
+      <label>[Art] Pastel</label>
+   </colorScheme>
+   <colorScheme name="sony">
+      <label>[Art] Sony</label>
+   </colorScheme>
+   <colorScheme name="nes">
+      <label>[Art] NES</label>
+   </colorScheme>
+   <colorScheme name="snes">
+      <label>[Art] SNES</label>
+   </colorScheme>
+   <colorScheme name="famicom">
+      <label>[Art] Famicom</label>
+   </colorScheme>
+
+
+   
+   <transitions name="transitions">
+      <label>transitions</label>
+      <selectable>false</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>instant</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>instant</gamelistToSystem>
+      <startupToSystem>instant</startupToSystem>
+      <startupToGamelist>instant</startupToGamelist>
+   </transitions>
+   <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
+      <entry>builtin-slide</entry>
+      <entry>builtin-fade</entry>
+   </suppressTransitionProfiles>
+
+
+   <variant name="grid-textlist">
+      <label>[Grid] Textlist</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-textlist-flipped">
+      <label>[Grid] Textlist - Flipped</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-carousel">
+      <label>[Grid] Carousel: Marquee</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-boxart-carousel">
+      <label>[Grid] Carousel: Boxart</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-grid-basic">
+      <label>[Grid] Grid: Basic</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-grid-detailed">
+      <label>[Grid] Grid: Detailed</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-grid-detailed-flipped">
+      <label>[Grid] Grid: Detailed - Flipped</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="grid-row">
+      <label>[Grid] Row</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-textlist">
+      <label>[Carousel] Textlist</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-textlist-flipped">
+      <label>[Carousel] Textlist - Flipped</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-carousel">
+      <label>[Carousel] Carousel: Marquee</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-boxart-carousel">
+      <label>[Carousel] Carousel: Boxart</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-grid-basic">
+      <label>[Carousel] Grid: Basic</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-grid-detailed">
+      <label>[Carousel] Grid: Detailed</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-grid-detailed-flipped">
+      <label>[Carousel] Grid: Detailed - Flipped</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="carousel-row">
+      <label>[Carousel] Row</label>
+      <selectable>true</selectable>
+   </variant>
+</themeCapabilities>
