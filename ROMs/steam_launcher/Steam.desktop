@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Steam Desktop
-Exec=steam -bigpicture
-Terminal=false
-Categories=Game;
