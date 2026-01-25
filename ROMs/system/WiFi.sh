@@ -144,6 +144,8 @@ def conectar_wifi_threaded(ssid, pwd):
         elif proceso_wifi.returncode == 0:
             feedback = f"✅ Conectado a '{ssid}'!"
             feedback_time = time.time()
+            print("__OK__") 
+            sys.stdout.flush()
         else:
             stderr_output = proceso_wifi.stderr.read()
             if "Secrets were required" in stderr_output or "password" in stderr_output:
