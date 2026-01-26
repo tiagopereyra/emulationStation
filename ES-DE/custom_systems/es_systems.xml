@@ -5,7 +5,7 @@
     <fullname>🎮 Steam Juegos</fullname>
     <path>~/ROMs/steam_games</path>
     <extension>.desktop .sh</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>steam_games</theme>
   </system>
@@ -14,7 +14,7 @@
     <fullname>🚀 Steam Launcher</fullname>
     <path>~/ROMs/steam_launcher</path>
     <extension>.desktop .sh</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>steam_launcher</theme>
   </system>
@@ -23,7 +23,7 @@
     <fullname>☁️ Cloud Gaming</fullname>
     <path>~/ROMs/cloud</path>
     <extension>.sh .desktop</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>cloud</theme>
   </system>
@@ -32,7 +32,7 @@
     <fullname>🌐 Internet</fullname>
     <path>~/ROMs/internet</path>
     <extension>.sh .desktop</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>internet</theme>
   </system>
@@ -41,7 +41,7 @@
     <fullname>🎞️ Multimedia</fullname>
     <path>~/ROMs/multimedia</path>
     <extension>.sh .desktop</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>multimedia</theme>
   </system>
@@ -50,7 +50,7 @@
     <fullname>⚙️ Sistema</fullname>
     <path>~/ROMs/system</path>
     <extension>.sh .desktop</extension>
-    <command>bash %ROM%</command>
+    <command>python3 %ROM%</command>
     <platform>pc</platform>
     <theme>sys_apps</theme>
   </system>
